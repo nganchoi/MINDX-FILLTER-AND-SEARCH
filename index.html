@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="search-container" id="AddForm">
+        <form onsubmit="submitForm(event)">
+          <input type="text" placeholder="AddName" id="valueInput" />
+          <input type="text" placeholder="AddNumber" id="valueInput" />
+          <input type="submit" id="Add" value="Add" />
+        </form>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+        <button id="Delete">Delete</button>
+      </div>
+      <div id="buttons"></div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="main.js"></script>
+  </body>
+</html>
